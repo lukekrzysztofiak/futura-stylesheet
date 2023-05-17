@@ -1,0 +1,164 @@
+/* Reset some default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #0b0e11;
+    color: #0ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff;
+}
+
+a {
+    color: #f00;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0ff;
+}
+
+p {
+    color: #aaa;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #000;
+    color: #f00;
+    border: 2px solid #f00;
+}
+
+.button:hover {
+    background-color: #f00;
+    color: #000;
+}
+
+.card {
+    background: #1d1f22;
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 20px 0;
+    color: #aaa;
+    border-radius: 10px;
+}
+
+.card:hover {
+    border-color: #f00;
+    box-shadow: 0 0 10px #f00;
+}
+
+/* Additional CSS styles */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #0b0e11;
+    border-bottom: 2px solid #f00;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-items {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items a {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.footer {
+    background: #0b0e11;
+    padding: 20px;
+    color: #aaa;
+    border-top: 2px solid #f00;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #1d1f22;
+    border: none;
+    border-bottom: 2px solid #f00;
+    color: #aaa;
+    outline: none;
+}
+
+.form-input:focus {
+    border-color: #0ff;
+    color: #0ff;
+}
+
+.submit-btn {
+    cursor: pointer;
+    background: #f00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #000;
+    color: #f00;
+    border: 2px solid #f00;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+    color: #aaa;
+}
+
+.table th {
+    background: #1d1f22;
+    color: #f00;
+}
+
+.table tr:nth-child(even) {
+    background: #1d1f22;
+}
+
+.table tr:hover {
+    background: #0b0e11;
+    color: #0ff;
+}
